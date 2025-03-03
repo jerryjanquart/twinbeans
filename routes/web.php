@@ -1,7 +1,70 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\MustBeLoggedIn;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\SnacksController;
+use App\Http\Controllers\BeanBagsController;
+use App\Http\Controllers\HotDrinksController;
+use App\Http\Controllers\ColdDrinksController;
+use App\Http\Controllers\HealthyBitesController;
+use App\Http\Controllers\LatteFlavorsController;
+use App\Http\Controllers\PinballMachinesController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [PinballMachinesController::class, 'homepage']);
+
+
+Route::get('/login', [UserController::class, 'loginpage']);
+Route::post('/login', [UserController::class, 'login']);
+Route::post('/logout', [UserController::class, 'logout']);
+
+
+Route::controller(PinballMachinesController::class)->group(function() {
+    Route::get('/machines', 'index')
+        ->middleware(MustBeLoggedIn::class);
+    Route::post('/machines', 'store')
+        ->middleware(MustBeLoggedIn::class);
+    Route::get('/machines/{machine:slug}', 'show');
+    Route::get('/machines/{machine:slug}/edit', 'edit')
+        ->middleware(MustBeLoggedIn::class);
+    Route::patch('/machines/{machine:slug}/edit', 'update')
+        ->middleware(MustBeLoggedIn::class);
+    Route::delete('/machines/{machine:slug}', 'destroy')
+        ->middleware(MustBeLoggedIn::class);
+});
+
+
+
+Route::controller(HotDrinksController::class)->group(function() {
+    Route::get('/menu', 'index');
+    Route::get('/menu/hotdrinks/{hotdrink}/edit', 'edit');
+    Route::patch('/menu/hotdrinks/{hotdrink}/edit', 'update');
+});
+
+
+Route::controller(BeanBagsController::class)->group(function() {
+    Route::get('/menu/beanbags/{beanbag}/edit', 'edit');
+    Route::patch('/menu/beanbags/{beanbag}/edit', 'update');
+});
+
+
+
+Route::controller(LatteFlavorsController::class)->group(function() {
+    Route::post('/menu/latte-flavor', 'store');
+    Route::delete('/menu/latte-flavor/{flavor}', 'destroy');
+});
+
+Route::controller(ColdDrinksController::class)->group(function() {
+    Route::post('/menu/cold-drink', 'store');
+    Route::delete('/menu/cold-drink/{colddrink}', 'destroy');
+});
+
+Route::controller(SnacksController::class)->group(function() {
+    Route::post('/menu/snack', 'store');
+    Route::delete('/menu/snack/{snack}', 'destroy');
+});
+
+Route::controller(HealthyBitesController::class)->group(function() {
+    Route::post('/menu/healthy-bite', 'store');
+    Route::delete('/menu/healthy-bite/{healthybite}', 'destroy');
 });
