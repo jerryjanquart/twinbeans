@@ -12,7 +12,7 @@
             <div class="container px-5">
                 <center><a href="#page-top"><images src="images/logo-white-solid.png" width="300px" /></a></center>
                 <div class="text-white-50">
-                    <div class="mb-2">&copy; Twin Beans Coffee 2025. All Rights Reserved. 
+                    <div class="mb-2">&copy; Twin Beans Coffee 2025. All Rights Reserved. JMJDesign.
                         @if(!Auth::check())
                             <a href="/login">LOGIN</a></div>
                         @endif
