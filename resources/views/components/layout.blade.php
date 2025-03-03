@@ -84,7 +84,7 @@
                         @else
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/machines">
-                                <i class="bi bi-lightning-charge-fill"></i> <u><span style="text-transform: uppercase;">machines</span></u>
+                                <span class="green"><i class="bi bi-lightning-charge-fill"></i></span> <u><span style="text-transform: uppercase;">edit machines</span></u>
                             </a>
                         </li>
                         @endif
@@ -98,7 +98,7 @@
                         @else
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/menu">
-                                <i class="bi bi-lightning-charge-fill"></i> <u><span style="text-transform: uppercase;">menu</span></u>
+                                <span class="green"><i class="bi bi-lightning-charge-fill"></i> </span><u><span style="text-transform: uppercase;">edit menu</span></u>
                             </a>
                         </li>
                         @endif
