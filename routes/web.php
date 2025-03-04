@@ -21,56 +21,51 @@ Route::post('/logout', [UserController::class, 'logout']);
 
 
 Route::controller(PinballMachinesController::class)->group(function() {
-    Route::get('/machines', 'index')
-        ->middleware(MustBeLoggedIn::class);
-    Route::post('/machines', 'store')
-        ->middleware(MustBeLoggedIn::class);
+    Route::get('/machines', 'index')->middleware(MustBeLoggedIn::class);
+    Route::post('/machines', 'store')->middleware(MustBeLoggedIn::class);
     Route::get('/machines/{machine:slug}', 'show');
-    Route::get('/machines/{machine:slug}/edit', 'edit')
-        ->middleware(MustBeLoggedIn::class);
-    Route::patch('/machines/{machine:slug}/edit', 'update')
-        ->middleware(MustBeLoggedIn::class);
-    Route::delete('/machines/{machine:slug}', 'destroy')
-        ->middleware(MustBeLoggedIn::class);
+    Route::get('/machines/{machine:slug}/edit', 'edit')->middleware(MustBeLoggedIn::class);
+    Route::patch('/machines/{machine:slug}/edit', 'update')->middleware(MustBeLoggedIn::class);
+    Route::delete('/machines/{machine:slug}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
 
 
 
 Route::controller(HotDrinksController::class)->group(function() {
     Route::get('/menu', 'index');
-    Route::get('/menu/hotdrinks/{hotdrink}/edit', 'edit');
-    Route::patch('/menu/hotdrinks/{hotdrink}/edit', 'update');
+    Route::get('/menu/hotdrinks/{hotdrink}/edit', 'edit')->middleware(MustBeLoggedIn::class);
+    Route::patch('/menu/hotdrinks/{hotdrink}/edit', 'update')->middleware(MustBeLoggedIn::class);
 });
 
 
 Route::controller(BeanBagsController::class)->group(function() {
-    Route::get('/menu/beanbags/{beanbag}/edit', 'edit');
-    Route::patch('/menu/beanbags/{beanbag}/edit', 'update');
+    Route::get('/menu/beanbags/{beanbag}/edit', 'edit')->middleware(MustBeLoggedIn::class);
+    Route::patch('/menu/beanbags/{beanbag}/edit', 'update')->middleware(MustBeLoggedIn::class);
 });
 
 
 
 Route::controller(LatteFlavorsController::class)->group(function() {
-    Route::post('/menu/latte-flavor', 'store');
-    Route::delete('/menu/latte-flavor/{flavor}', 'destroy');
+    Route::post('/menu/latte-flavor', 'store')->middleware(MustBeLoggedIn::class);
+    Route::delete('/menu/latte-flavor/{flavor}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
 
 Route::controller(ColdDrinksController::class)->group(function() {
-    Route::post('/menu/cold-drink', 'store');
-    Route::delete('/menu/cold-drink/{colddrink}', 'destroy');
+    Route::post('/menu/cold-drink', 'store')->middleware(MustBeLoggedIn::class);
+    Route::delete('/menu/cold-drink/{colddrink}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
 
 Route::controller(SnacksController::class)->group(function() {
-    Route::post('/menu/snack', 'store');
-    Route::delete('/menu/snack/{snack}', 'destroy');
+    Route::post('/menu/snack', 'store')->middleware(MustBeLoggedIn::class);
+    Route::delete('/menu/snack/{snack}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
 
 Route::controller(HealthyBitesController::class)->group(function() {
-    Route::post('/menu/healthy-bite', 'store');
-    Route::delete('/menu/healthy-bite/{healthybite}', 'destroy');
+    Route::post('/menu/healthy-bite', 'store')->middleware(MustBeLoggedIn::class);
+    Route::delete('/menu/healthy-bite/{healthybite}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
 
 Route::controller(TeaFlavorsController::class)->group(function() {
-    Route::post('/menu/tea-flavor', 'store');
-    Route::delete('/menu/tea-flavor/{teaflavor}', 'destroy');
+    Route::post('/menu/tea-flavor', 'store')->middleware(MustBeLoggedIn::class);
+    Route::delete('/menu/tea-flavor/{teaflavor}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
