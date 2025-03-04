@@ -4,7 +4,7 @@
 
     <head>
 
-        <!-- Google tag (gtag.js) add Feb 25, 2024-->
+        <!-- Google tag (gtag.js) add Feb 25, 2024
         <script 
             async src="https://www.googletagmanager.com/gtag/js?id=G-YNR6PSXXML">
         </script>
@@ -14,7 +14,7 @@
             gtag('js', new Date());
 
             gtag('config', 'G-YNR6PSXXML');
-        </script>
+        </script>-->
 
 
         <meta charset="utf-8" />
