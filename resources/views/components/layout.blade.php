@@ -104,25 +104,25 @@
                         @endif
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="#hours">
+                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#hours">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">hours</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="#location">
+                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#location">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">location</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="#about">
+                            <a class="nav-link me-lg-3" href="http://142.93.61.180/##about">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">about</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="#reviews">
+                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#reviews">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">reviews</span></u>
                             </a>
                         </li>
