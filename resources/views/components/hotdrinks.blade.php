@@ -51,5 +51,13 @@
         </div>  
         <div class="col-sm-2"></div>
     </div>
+
+    <div class="row" id="tea_flavors">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 text-center">
+          <strong><span class="green">Tea Flavors:</span></strong> Blueberry Hibiscus • Chamomile Medley • Earl Grey • English Breakfast • Jasmine • Lavender Mint • Masala Chai • Turmeric Ginger
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
     
 </section>
