@@ -1,4 +1,4 @@
-<section id="snacks">
+<section id="snacks" class="px-2">
     <div class="row">
         <div class="col">
 

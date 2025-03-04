@@ -88,7 +88,7 @@
                     @else
                     @foreach ($lattes as $latte)
                     <hr />
-                    <p class="lead fw-normal mb-4 pt-3">
+                    <p class="lead fw-normal mb-3 pt-2">
                     <span class="green"><i class="bi bi-lightning-charge-fill"></i></span>&nbsp;<span style="color: black;"><strong>{{ $latte->name }}</strong></span>
                     </p>
                     @endforeach

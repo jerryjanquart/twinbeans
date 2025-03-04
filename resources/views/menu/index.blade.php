@@ -12,6 +12,7 @@
                             <h1 class="display-1 lh-1 mb-3 mt-2">Menu</h1>
                         </div>
                         <x-hotdrinks :hotdrinks="$hotdrinks" />
+                        <x-teaflavors :teas="$teas" />
                         <x-bakeryitems />
                         <div class="row">
                             <div class="col-md-1"></div>

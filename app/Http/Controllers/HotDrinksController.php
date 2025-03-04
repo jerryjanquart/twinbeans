@@ -6,6 +6,7 @@ use App\Models\Snacks;
 use App\Models\BeanBags;
 use App\Models\HotDrinks;
 use App\Models\ColdDrinks;
+use App\Models\TeaFlavors;
 use App\Models\HealthyBites;
 use App\Models\LatteFlavors;
 use Illuminate\Http\Request;
@@ -22,6 +23,7 @@ class HotDrinksController extends Controller
             'colddrinks' => ColdDrinks::orderBy('name')->get(),
             'hotdrinks' => HotDrinks::all(),
             'lattes' => LatteFlavors::orderBy('name')->get(),
+            'teas' => TeaFlavors::orderBy('name')->get(),
             'game' => PinballMachines::all()->where('active', 'true')->first()
         ]);
     }

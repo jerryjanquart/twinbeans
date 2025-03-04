@@ -1,4 +1,4 @@
-<section>
+<section class="px-2">
   <div class="text-center"><h3 class="font-alt"><span class="green"><u><i class="bi bi-caret-right-fill"></i> Don Turo&#8212;Whole Bean</u></span></h3></div>
   <div class="row">
     <div class="col-sm-3"></div>

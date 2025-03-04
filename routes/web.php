@@ -7,6 +7,7 @@ use App\Http\Controllers\SnacksController;
 use App\Http\Controllers\BeanBagsController;
 use App\Http\Controllers\HotDrinksController;
 use App\Http\Controllers\ColdDrinksController;
+use App\Http\Controllers\TeaFlavorsController;
 use App\Http\Controllers\HealthyBitesController;
 use App\Http\Controllers\LatteFlavorsController;
 use App\Http\Controllers\PinballMachinesController;
@@ -67,4 +68,9 @@ Route::controller(SnacksController::class)->group(function() {
 Route::controller(HealthyBitesController::class)->group(function() {
     Route::post('/menu/healthy-bite', 'store');
     Route::delete('/menu/healthy-bite/{healthybite}', 'destroy');
+});
+
+Route::controller(TeaFlavorsController::class)->group(function() {
+    Route::post('/menu/tea-flavor', 'store');
+    Route::delete('/menu/tea-flavor/{teaflavor}', 'destroy');
 });

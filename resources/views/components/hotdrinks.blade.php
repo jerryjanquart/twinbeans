@@ -1,4 +1,4 @@
-<section>
+<section class="px-4" style="padding-bottom: 0px;">
   <div class="text-center"><h3 class="font-alt green"><u><i class="bi bi-caret-right-fill"></i> Coffees, Lattes* &amp; More</u></h3></div>
   
   @if (session()->has('success'))
@@ -28,7 +28,7 @@
             </thead>
             <tbody>
             @foreach ($hotdrinks as $hotdrink)
-              <tr>
+              <tr class="tea">
                 <td><span class="lead fw-normal"><strong>{{ $hotdrink->type }}</strong></span></td>
                 <td><span class="lead fw-normal">{{ $hotdrink->small }}</span></td>
                 <td><span class="lead fw-normal">{{ $hotdrink->medium }}</span></td>
@@ -50,14 +50,5 @@
           </table>
         </div>  
         <div class="col-sm-2"></div>
-    </div>
-
-    <div class="row" id="tea_flavors">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8 text-center">
-          <strong><span class="green">Tea Flavors:</span></strong> Blueberry Hibiscus • Chamomile Medley • Earl Grey • English Breakfast • Jasmine • Lavender Mint • Masala Chai • Turmeric Ginger
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-    
+    </div>    
 </section>
