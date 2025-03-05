@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Special;
 use Illuminate\Http\Request;
 use App\Models\PinballMachines;
 
@@ -11,6 +12,7 @@ class PinballMachinesController extends Controller
     public function homepage() 
     {
         return view('home', [ 
+            'special' => Special::get()->first(),
             'machines' => PinballMachines::all()->where('active', 'true'),
             'game' => PinballMachines::all()->where('active', 'true')->first(),
             'url' => \Request::getRequestUri()

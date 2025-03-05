@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\MustBeLoggedIn;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SnacksController;
+use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\BeanBagsController;
 use App\Http\Controllers\HotDrinksController;
 use App\Http\Controllers\ColdDrinksController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\LatteFlavorsController;
 use App\Http\Controllers\PinballMachinesController;
 
 Route::get('/', [PinballMachinesController::class, 'homepage']);
+Route::patch('/{special}', [SpecialController::class, 'update']);
 
 
 Route::get('/login', [UserController::class, 'loginpage']);

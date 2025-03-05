@@ -7,5 +7,6 @@
     </div>
 </section>
 
-<!-- Gradient Spacer Bar -->
+<!-- Gradient Spacer Bar 
 <div class="text-center bg-gradient-primary-to-secondary" height="50px">&nbsp;</div>
+-->

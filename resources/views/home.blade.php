@@ -1,6 +1,7 @@
 <x-layout :game="$game">
 
     <x-jumbotron />
+    <x-thisweeksspecial :special="$special"/>
     <x-aboutlocation />
     <x-donturo />
     <x-featuring />
