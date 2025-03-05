@@ -1,11 +1,12 @@
 <x-layout :game="$game">
 
         <section>
-            <div class="row px-5" style="margin-top: 150px; min-height: 600px;">
+            <div class="row px-5" style="margin-top: 120px; min-height: 600px;">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
                     <center>
-                    <h1 class="display-1 lh-1 mt-4 mb-4">Login</h1>
+                    <i class="bi bi-lightning-charge icon-feature text-gradient d-block mb-3"></i>    
+                    <h1 class="display-1 lh-1 mb-4">Login</h1>
                     </center>
                     <form method="POST" action="/login">
                         @csrf
