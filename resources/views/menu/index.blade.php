@@ -11,6 +11,18 @@
                             <i class="bi bi-bullseye icon-feature text-gradient d-block"></i>
                             <h1 class="display-1 lh-1 mb-3 mt-2">Menu</h1>
                         </div>
+
+                        @if (session()->has('success'))
+                                <center>
+                                <div class="alert alert-warning alert-dismissible fade show mt-4 mx-3 pt-4" role="alert">
+                                    <center><p><strong><span class="green">
+                                        <i class="bi bi-lightning-charge-fill"></i> 
+                                        SUCCESS: {{session('success')}}
+                                    </span></strong></p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></center>
+                                </div>      
+                            </center>    
+                        @endif
                         <x-hotdrinks :hotdrinks="$hotdrinks" />
                         <x-teaflavors :teas="$teas" />
                         <x-bakeryitems />

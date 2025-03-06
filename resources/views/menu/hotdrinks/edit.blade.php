@@ -59,7 +59,7 @@
                         
                         </div>
                         <div class="row mt-3 mb-4"><div class="col text-center">
-                            <center><a href="/menu" class="btn btn-secondary">Back</a>&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary">Submit</button>
+                            <center><a href="/menu" class="btn btn-secondary mb-3">Back</a>&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary mb-3">Submit</button>
                         </div></div>
                       </form>
 

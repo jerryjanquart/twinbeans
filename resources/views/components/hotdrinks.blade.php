@@ -1,18 +1,7 @@
 <section class="px-4" style="padding-bottom: 0px;">
   <div class="text-center"><h3 class="font-alt green"><u><i class="bi bi-caret-right-fill"></i> Coffees, Lattes* &amp; More</u></h3></div>
   
-  @if (session()->has('success'))
-        <center>
-        <div style="width: 600px;
-        padding-top: 30px;" class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
-            <center><p><strong><span class="green">
-                <i class="bi bi-lightning-charge-fill"></i> 
-                SUCCESS: {{session('success')}}
-            </span></strong></p>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></center>
-        </div>      
-      </center>    
-  @endif
+  
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
