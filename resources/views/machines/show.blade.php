@@ -6,7 +6,7 @@
     
     </div>
 
-    <section class="mx-5">
+    <section class="mx-5 pb-0">
     
     <div class="row" style="margin-bottom: 60px;">
         <div class="col-lg-2"></div>
@@ -79,7 +79,10 @@
         <div class="col-lg-2"></div>
     </div>
 
-</section>
+    
 
+</section>
+    
+    <img src="/assets/images/machines/fb/{{ $machine->slug }}.jpg" width="100%"/>
     <x-footer />
 </x-layout>
