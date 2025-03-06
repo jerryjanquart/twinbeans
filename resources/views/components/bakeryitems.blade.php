@@ -1,4 +1,4 @@
-<section id="bakery-items">
+<section id="bakery-items" class="px-3">
     
     <div class="row">
         <div class="col">

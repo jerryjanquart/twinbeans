@@ -15,12 +15,12 @@
         <tbody>
         @foreach ($beanbags as $beanbag)
           <tr>
-            <td><span class="lead fw-normal"><strong>{{ $beanbag->blend }}</strong></span></td>
-            <td><span class="lead fw-normal">{{ $beanbag->cost }}</span></td>
+            <td><p class="lead fw-normal mt-3"><strong>{{ $beanbag->blend }}</strong></p></td>
+            <td><p class="mt-4"><strong>{{ $beanbag->cost }}</strong></p></td>
             @if(Auth::check())
             <td>
               <a  type="button" 
-                      class="btn btn-primary btn-sm" 
+                      class="btn btn-primary btn-sm mt-3" 
                       href="/menu/beanbags/{{ $beanbag->id }}/edit" 
                       role="button"
                   >

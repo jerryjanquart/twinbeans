@@ -1,4 +1,4 @@
-<section id="healthy-bites">
+<section id="healthy-bites" class="px-3">
     
     <div class="row">
         <div class="col">

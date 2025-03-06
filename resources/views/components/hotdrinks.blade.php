@@ -29,14 +29,14 @@
             <tbody>
             @foreach ($hotdrinks as $hotdrink)
               <tr class="tea">
-                <td><span class="lead fw-normal"><strong>{{ $hotdrink->type }}</strong></span></td>
-                <td><span class="lead fw-normal">{{ $hotdrink->small }}</span></td>
-                <td><span class="lead fw-normal">{{ $hotdrink->medium }}</span></td>
-                <td><span class="lead fw-normal">{{ $hotdrink->large }}</span></td>
+                <td><p class="lead fw-normal mt-3"><strong>{{ $hotdrink->type }}</strong></p></td>
+                <td><p class="mt-4"><strong>{{ $hotdrink->small }}</strong></p></td>
+                <td><p class="mt-4"><strong>{{ $hotdrink->medium }}</strong></p></td>
+                <td><p class="mt-4"><strong>{{ $hotdrink->large }}</strong></p></td>
                 @if(Auth::check())
                 <td>
                   <a  type="button" 
-                      class="btn btn-primary btn-sm" 
+                      class="btn btn-primary btn-sm mt-3" 
                       href="/menu/hotdrinks/{{ $hotdrink->id }}/edit" 
                       role="button"
                   >

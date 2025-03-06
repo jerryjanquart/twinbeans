@@ -1,4 +1,4 @@
-<section id="colddrinks">
+<section id="colddrinks" class="px-3">
     <div class="row">
         <div class="col">
             
