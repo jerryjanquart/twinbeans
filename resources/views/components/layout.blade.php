@@ -47,10 +47,14 @@
         <link href="/assets/css/styles.css" rel="stylesheet" />
         
         <!-- Facebook tags-->
+        <meta property="fb:app_id" content="1155446072478399" />
+
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes.">
-        <meta property="og:title" content="@isset($machine) {{$machine->name}} at Twin Beans Coffee @else Twin Beans Coffee @endisset">
-        <meta property="og:description" content="@isset($machine) {{$machine->headline }} @else Twin Beans Coffee @endisset"/>
+        
+        <meta property="og:title" content="@isset($machine) Now Playing: {{ $machine->name }} @else Twin Beans Coffee @endisset">
+
+        <meta property="og:description" content="@isset($machine) Pinball at Twin Beans Coffee! {{$machine->headline }} @else Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes. @endisset"/>
+        
         <meta property="og:image" content="
         @isset($machine) 
             /assets/images/machines/fb/{{$machine->slug}}.jpg
