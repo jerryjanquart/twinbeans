@@ -49,9 +49,16 @@
         <!-- Facebook tags-->
         <meta property="og:type" content="website">
         <meta property="og:description" content="Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes.">
-        <meta property="fb:app_id" content="1155446072478399">
-        <meta property="og:title" content="Twin Beans Coffee">
-        <meta property="og:image" content="images/fb-sharesquare.jpg">
+        <meta property="og:title" content="@isset($machine) {{$machine->name}} at Twin Beans Coffee @else Twin Beans Coffee @endisset">
+        <meta property="og:description" content="@isset($machine) {{$machine->headline }} @else Twin Beans Coffee @endisset"/>
+        <meta property="og:image" content="
+        @isset($machine) 
+            /assets/images/machines/fb/{{$machine->slug}}.jpg
+        @else 
+            /assets/images/fb-sharesquare.jpg
+        @endisset
+        
+        ">
         <meta property="og:url" content="https://www.twinbeansnwi.com">
 
     </head>
