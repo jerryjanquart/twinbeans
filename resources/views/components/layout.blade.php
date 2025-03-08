@@ -51,9 +51,9 @@
 
         <meta property="og:type" content="website">
         
-        <meta property="og:title" content="@isset($machine) Now Playing: {{ $machine->name }} @else Twin Beans Coffee @endisset">
+        <meta property="og:title" content="@isset($machine) Now Playing at Twin Beans Coffee: {{ $machine->name }} @else Twin Beans Coffee @endisset">
 
-        <meta property="og:description" content="@isset($machine) Pinball at Twin Beans Coffee! {{$machine->headline }} @else Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes. @endisset"/>
+        <meta property="og:description" content="@isset($machine) Pinball at the shop! {{ $machine->headline }} @else Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes. @endisset"/>
         
         <meta property="og:image" content="
         @isset($machine) 
