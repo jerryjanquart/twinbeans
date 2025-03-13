@@ -19,15 +19,15 @@ class BeanBagsSeeder extends Seeder
         ]);
         DB::table('bean_bags')->insert([
             'blend' => 'Lava Heart Blend',
-            'cost' => '$16.50'
+            'cost' => '$20.50'
         ]);
         DB::table('bean_bags')->insert([
             'blend' => 'Catuai Blend',
-            'cost' => '$14.50'
+            'cost' => '$17.50'
         ]);
         DB::table('bean_bags')->insert([
             'blend' => 'Espresso',
-            'cost' => '$16.50'
+            'cost' => '$22.50'
         ]);
     }
 }
