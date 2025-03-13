@@ -63,7 +63,8 @@
         @endisset
         
         ">
-        <meta property="og:url" content="https://www.twinbeansnwi.com">
+
+        <meta property="og:url" content="@isset($machine) https://www.twinbeansnwi.com/machines/{{ $machine->slug }} @else https://www.twinbeansnwi.com @endisset">
 
     </head>
 
