@@ -57,9 +57,9 @@
         
         <meta property="og:image" content="
         @isset($machine) 
-            /assets/images/machines/fb/{{$machine->slug}}.jpg
+            https://www.twinbeansnwi.com/assets/images/machines/fb/{{$machine->slug}}.jpg
         @else 
-            /assets/images/fb-sharesquare.jpg
+            https://www.twinbeansnwi.com/assets/images/fb-sharesquare.jpg
         @endisset
         
         ">
