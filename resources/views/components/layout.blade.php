@@ -115,25 +115,25 @@
                         @endif
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#hours">
+                            <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#hours">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">hours</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#location">
+                            <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#location">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">location</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#about">
+                            <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#about">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">about</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="http://142.93.61.180/#reviews">
+                            <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#reviews">
                                 <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">reviews</span></u>
                             </a>
                         </li>
