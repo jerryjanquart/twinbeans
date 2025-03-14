@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class BeanBags extends Model
 {
     protected $fillable = [
+        'blend',
         'cost'
     ];
 

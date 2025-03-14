@@ -23,10 +23,12 @@ class BeanBagsController extends Controller
     {
 
         request()->validate([
+            'blend' => 'required',
             'cost' => 'required'
         ]);
 
         $beanbag->update([
+            'blend' => request('blend'),
             'cost' => request('cost')
         ]);
 
