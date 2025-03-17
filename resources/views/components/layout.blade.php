@@ -4,17 +4,16 @@
 
     <head>
 
-        <!-- Google tag (gtag.js) add Feb 25, 2024
-        <script 
-            async src="https://www.googletagmanager.com/gtag/js?id=G-YNR6PSXXML">
-        </script>
-        <script> 
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <!-- Google tag (gtag.js) readded Mar 17, 2025 for new website-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNR6PSXXML"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-YNR6PSXXML');
-        </script>-->
+        gtag('config', 'G-YNR6PSXXML');
+        </script>
+
 
 
         <meta charset="utf-8" />
