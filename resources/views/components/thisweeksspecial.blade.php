@@ -13,7 +13,7 @@
             </div>          
             @endif
 
-            <h1 class="display-6 lh-1 mb-3 mt-2 text-white"><u><!--This week's special-->Notice</u></h1> 
+            <h1 class="display-6 lh-1 mb-3 mt-2 text-white"><u>This week's special</u></h1> 
             @if(!Auth::check())
             <p class="lead fw-normal mb-0"><i class="bi bi-lightning-charge-fill"></i> <span class="black">{{ $special->name }}</span> <i class="bi bi-lightning-charge-fill"></i></p>
             <p><strong>{{ $special->description }}</strong></p>
