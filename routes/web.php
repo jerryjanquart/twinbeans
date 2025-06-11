@@ -41,6 +41,7 @@ Route::controller(HotDrinksController::class)->group(function() {
 
 
 Route::controller(BeanBagsController::class)->group(function() {
+    Route::post('/menu/beanbags', 'store')->middleware(MustBeLoggedIn::class);
     Route::get('/menu/beanbags/{beanbag}/edit', 'edit')->middleware(MustBeLoggedIn::class);
     Route::patch('/menu/beanbags/{beanbag}/edit', 'update')->middleware(MustBeLoggedIn::class);
 });

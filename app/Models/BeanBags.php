@@ -8,6 +8,7 @@ class BeanBags extends Model
 {
     protected $fillable = [
         'blend',
+        'oz',
         'cost'
     ];
 

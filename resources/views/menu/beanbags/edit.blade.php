@@ -12,9 +12,8 @@
                             <strong><i class="bi bi-caret-right-fill"></i> UPDATE</strong>
                         </p></center>
                         <div class="row">
-                          <div class="mb-3 col-sm-1"></div>  
                           
-                          <div class="mb-3 col-sm-5">
+                          <div class="mb-3 col-sm-4">
                             <label for="blend" class="form-label">
                                 <strong><span class="green">Name</span></strong>
                             </label>
@@ -28,7 +27,21 @@
                                 value="{{ $beanbag->blend }}">
                             </div>
 
-                            <div class="mb-3 col-sm-5">
+                            <div class="mb-3 col-sm-4">
+                            <label for="blend" class="form-label">
+                                <strong><span class="green">Weight</span></strong>
+                            </label>
+                            <input 
+                                name="oz" 
+                                type="text" 
+                                class="form-control" 
+                                id="oz" 
+                                style="background-color: #fffde2"
+                                aria-describedby="oz"
+                                value="{{ $beanbag->oz }}">
+                            </div>
+
+                            <div class="mb-3 col-sm-4">
                                 <label for="cost" class="form-label">
                                     <strong><span class="green">Price</span></strong>
                                 </label>
@@ -42,10 +55,11 @@
                                     value="{{ $beanbag->cost }}">
                                 </div>
 
-                            <div class="mb-3 col-sm-1"></div> 
                         </div>
                         <div class="row mt-3 mb-4"><div class="col text-center">
-                            <center><a href="/menu" class="btn btn-secondary">Back</a>&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary">Submit</button>
+                            <center>
+                                <a href="/menu" class="btn btn-secondary">Back</a>&nbsp;&nbsp;&nbsp;
+                                <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;
                         </div></div>
                       </form>
 
