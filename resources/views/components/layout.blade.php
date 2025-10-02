@@ -27,7 +27,7 @@
             @endisset
           </title>
         <meta name="description" content="Welcome to a different kind of coffee shop in Northwest Indiana! A great place for meeting up and enjoying delicious coffee and lattes." />
-        <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./favicon.png" />
         
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
