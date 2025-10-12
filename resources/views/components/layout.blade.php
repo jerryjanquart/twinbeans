@@ -89,13 +89,13 @@
                         @if(!Auth::check())
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/machines/{{ $game->slug }}">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">machines</span></u>
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">machines</span></u>
                             </a>
                         </li>
                         @else
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/machines">
-                                <span class="green"><i class="bi bi-lightning-charge-fill"></i></span> <u><span style="text-transform: uppercase;">edit machines</span></u>
+                                <span class="green"><i class="bi bi-lightning-charge-fill"></i></span><u><span style="text-transform: uppercase;">edit machines</span></u>
                             </a>
                         </li>
                         @endif
@@ -103,38 +103,38 @@
                         @if(!Auth::check())
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/menu">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">menu</span></u>
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">menu</span></u>
                             </a>
                         </li>
                         @else
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="/menu">
-                                <span class="green"><i class="bi bi-lightning-charge-fill"></i> </span><u><span style="text-transform: uppercase;">edit menu</span></u>
+                                <span class="green"><i class="bi bi-lightning-charge-fill"></i></span><u><span style="text-transform: uppercase;">edit menu</span></u>
                             </a>
                         </li>
                         @endif
                         
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#hours">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">hours</span></u>
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">hours</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#location">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">location</span></u>
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">location</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
-                            <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#about">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">about</span></u>
+                            <a class="nav-link me-lg-3" href="/gallery">
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">Photos</span></u>
                             </a>
                         </li>  
                         
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="https://twinbeansnwi.com/#reviews">
-                                <i class="bi bi-lightning-charge"></i> <u><span style="text-transform: uppercase;">reviews</span></u>
+                                <i class="bi bi-lightning-charge"></i><u><span style="text-transform: uppercase;">reviews</span></u>
                             </a>
                         </li>
 

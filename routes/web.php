@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\MustBeLoggedIn;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\SnacksController;
 use App\Http\Controllers\SpecialController;
 use App\Http\Controllers\BeanBagsController;
@@ -72,3 +73,5 @@ Route::controller(TeaFlavorsController::class)->group(function() {
     Route::post('/menu/tea-flavor', 'store')->middleware(MustBeLoggedIn::class);
     Route::delete('/menu/tea-flavor/{teaflavor}', 'destroy')->middleware(MustBeLoggedIn::class);
 });
+
+Route::get('/gallery', [PhotosController::class, 'index']);
