@@ -13,7 +13,7 @@ class PinballMachinesController extends Controller
     {
         return view('home', [ 
             'special' => Special::get()->first(),
-            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
+            'machines' => PinballMachines::all()->where('active', 'true'),
             'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
             'url' => \Request::getRequestUri()
         ]);
@@ -26,7 +26,7 @@ class PinballMachinesController extends Controller
     {
         return view('machines.index', [ 
             'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
-            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
+            'machines' => PinballMachines::all()->where('active', 'true'),
             'allMachines' =>PinballMachines::orderBy('active', 'desc')->get(),
             'url' => \Request::getRequestUri()
         ]);
@@ -57,7 +57,7 @@ class PinballMachinesController extends Controller
     {
         return view('machines.show', [
             'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
-            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
+            'machines' => PinballMachines::all()->where('active', 'true'),
             'machine' => $machine,
             'url' => \Request::getRequestUri(),
 
