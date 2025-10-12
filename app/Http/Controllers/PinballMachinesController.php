@@ -13,8 +13,8 @@ class PinballMachinesController extends Controller
     {
         return view('home', [ 
             'special' => Special::get()->first(),
-            'machines' => PinballMachines::all()->where('active', 'true'),
-            'game' => PinballMachines::all()->where('active', 'true')->first(),
+            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
+            'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
             'url' => \Request::getRequestUri()
         ]);
     }
@@ -25,8 +25,8 @@ class PinballMachinesController extends Controller
     public function index() 
     {
         return view('machines.index', [ 
-            'game' => PinballMachines::all()->where('active', 'true')->first(),
-            'machines' => PinballMachines::all()->where('active', 'true'),
+            'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
+            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
             'allMachines' =>PinballMachines::orderBy('active', 'desc')->get(),
             'url' => \Request::getRequestUri()
         ]);
@@ -56,8 +56,8 @@ class PinballMachinesController extends Controller
     public function show(PinballMachines $machine)
     {
         return view('machines.show', [
-            'game' => PinballMachines::all()->where('active', 'true')->first(),
-            'machines' => PinballMachines::all()->where('active', 'true'),
+            'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
+            'machines' => PinballMachines::orderBy('name', 'asc')->where('active','true')->get(),
             'machine' => $machine,
             'url' => \Request::getRequestUri(),
 
@@ -76,7 +76,7 @@ class PinballMachinesController extends Controller
     public function edit(PinballMachines $machine)
     {
         return view('machines.edit', [ 
-            'game' => PinballMachines::all()->where('active', 'true')->first(),
+            'game' => PinballMachines::orderBy('name', 'asc')->where('active', 'true')->first(),
             'machine' => $machine]);
     }
 
