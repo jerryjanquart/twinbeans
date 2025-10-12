@@ -27,7 +27,7 @@ class PinballMachinesController extends Controller
         return view('machines.index', [ 
             'game' => PinballMachines::all()->where('active', 'true')->first(),
             'machines' => PinballMachines::all()->where('active', 'true'),
-            'allMachines' => PinballMachines::all(),
+            'allMachines' =>PinballMachines::orderBy('active', 'desc')->get(),
             'url' => \Request::getRequestUri()
         ]);
     }
