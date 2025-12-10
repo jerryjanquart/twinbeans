@@ -1,12 +1,8 @@
 <x-layout doctitle="{!! $machine->name !!}" :game="$game" :next="$next" :previous="$previous" :machine="$machine">
 
-    <div style="margin-top: 80px;">
-
-        <x-pinballmachines :machines="$machines" :url="$url" />
     
-    </div>
 
-    <section class="mx-5 pb-0">
+    <section class="mx-5 pb-0" style="margin-top: 80px">
     
     <div class="row" style="margin-bottom: 30px;">
         <div class="col-lg-2"></div>
@@ -82,7 +78,15 @@
     
 
 </section>
+
     
     <img src="/assets/images/machines/fb/{{ $machine->slug }}.jpg" width="100%"/>
+
+    
+
+        <x-pinballmachines :machines="$machines" :url="$url" />
+    
+    
+
     <x-footer />
 </x-layout>
