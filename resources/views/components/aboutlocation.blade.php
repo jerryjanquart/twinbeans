@@ -25,9 +25,11 @@
                         <i class="bi bi-caret-right-fill"></i> HOURS 
                     </p>
                     <p class="leadsmaller fw-normal mb-5">    
-                        <i class="bi bi-lightning-charge-fill green"></i> Tues. &amp; Wed. 10 a.m. &#8211; 5:30 p.m.<br />
-                        <i class="bi bi-lightning-charge-fill green"></i> Thurs. &amp; Fri. 10 a.m. &#8211; 7 p.m.<br />
-                        <i class="bi bi-lightning-charge-fill green"></i> Sat. &amp; Sun. 9 a.m. &#8211; 5 p.m.<br />
+                        <i class="bi bi-lightning-charge-fill green"></i> Tues. 10 a.m. &#8211; 4:00 p.m.<br />
+                        <i class="bi bi-lightning-charge-fill green"></i> Wed. & Thurs. 10 a.m. &#8211; 5:30 p.m.<br />
+                        <i class="bi bi-lightning-charge-fill green"></i> Fri. 10 a.m. &#8211; 7 p.m.<br />
+                        <i class="bi bi-lightning-charge-fill green"></i> Sat. 9 a.m. &#8211; 6 p.m.<br />
+                        <i class="bi bi-lightning-charge-fill green"></i> Sun. 9 a.m. &#8211; 5 p.m.<br />
                         &nbsp;&nbsp;&nbsp;<em id="location">*Closed on Mon.</em>
                     </p>
                     
